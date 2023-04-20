@@ -1,0 +1,44 @@
+@use 'src/styles/variables' as var;
+
+.btn {
+  border-radius: var.$border-radius;
+  background-color: var.$primary;
+  padding: 0 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  transition: background-color 0.2s;
+  transition: color 0.2s;
+  height: 55px;
+  align-self: center;
+  border: 0;
+  color: var.$white;
+  font-weight: 700;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-solid {
+  background-color: var.$primary;
+  border: 0;
+  padding: 0 40px;
+  &:hover {
+    background-color: var.$secondary;
+  }
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 2px solid var.$primary;
+  color: var.$primary;
+  &:hover {
+    background-color: var.$primary;
+    color: var.$bg-dark;
+  }
+}
+
+.btn-nav {
+  height: 44px;
+}
+

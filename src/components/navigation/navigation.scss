@@ -1,0 +1,49 @@
+@use 'src/styles/variables' as var;
+@use 'src/styles/mixins' as mixin;
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+  left: 120px;
+  right: 120px;
+  height: 70px;
+  background-color: var.$nav-bg;
+  border-radius: 35px;
+  z-index: 2;
+}
+
+
+.logo {
+  margin-right: auto;
+}
+
+.nav-links  {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  color: var.$text-medium;
+  font-weight: 600;
+  font-size: 0.95em;
+  margin-right: 30px;
+}
+
+.btn-nav {
+  margin-right: 50px;
+}
+
+.social-icons {
+  align-self: center;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-icon path {
+  fill: var.$text-medium;
+}
+

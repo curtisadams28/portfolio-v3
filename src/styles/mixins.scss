@@ -1,0 +1,8 @@
+@use 'src/styles/variables' as var;
+
+@mixin section-width {
+  width: 100%;
+  @media (min-width: var.$xl) {
+    width: var.$xl;
+  }
+}
