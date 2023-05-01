@@ -1,0 +1,90 @@
+
+@use 'src/styles/variables' as var;
+
+.hero-section {
+  background-image: url('../img/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100svh;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-content, .bottom-content {
+  z-index: 3;
+}
+
+.hero-heading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 7em;
+  font-weight: 400;
+  color: var.$white;
+  text-align: center;
+  line-height: 0;
+  margin-block-end: 0.5em;
+}
+
+.background-gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(23,14,36,1) 0%, rgba(38,29,65,0.02) 100%);
+  z-index: 2;
+}
+
+.hero-subheading {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: var.$secondary;
+  text-align: center;
+}
+
+.hero-contact {
+  position: absolute;
+  bottom: 50px;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-contact-inner {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 50px;
+  margin-right: 50px;
+  @media only screen and (min-width: var.$md) {
+    width: 100%;
+  }
+  @media only screen and (min-width: 1600px){
+    width: 1500px;
+  }
+}
+
+.social-icons svg {
+  stroke: var.$primary;
+}
+
+.social-icons, .email {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 260px;
+  align-items: center;
+  .vl {
+    flex-grow: 1;
+    border-left: 2px solid var.$primary;
+  }
+}
+
+.email {
+  margin-left: auto;
+  p {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: var.$primary;
+    margin: 0;
+    line-height: 0;
+  }
+}
