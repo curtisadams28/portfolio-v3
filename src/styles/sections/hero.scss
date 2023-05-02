@@ -1,8 +1,8 @@
 
 @use 'src/styles/variables' as var;
 
-.hero-section {
-  background-image: url('../img/background.png');
+.hero {
+  background-image: url('../../img/background.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100svh;

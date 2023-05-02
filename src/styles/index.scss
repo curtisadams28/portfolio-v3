@@ -1,51 +1,9 @@
 @use 'src/styles/variables' as var;
 @use 'src/styles/mixins' as mixin;
 
-@use './hero-section.scss';
+@use './global-styles.scss';
+@use './sections/hero.scss';
+@use './sections/work.scss';
 
-// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comme:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
-
-
-
-
-/* GLOBAL STYLES */
-body {
-  margin: 0;
-  font-family: 'Comme', sans-serif;
-  color: var.$text-medium;
-}
-
-p {
-  font-size: var.$text;
-}
-
-
-
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.section-content {
-  @include mixin.section-width();
-}
-
-.heading {
-  font-size: 6em;
-  line-height: 0.9em;
-  font-family: 'Bebas Neue', sans-serif;
-  font-weight: 400;
-}
-
-
-/* MY WORK SECTION */
-
-.my-work-section {
-  background-color: var.$section1;
-}
 
 

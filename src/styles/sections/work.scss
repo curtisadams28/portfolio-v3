@@ -1,0 +1,18 @@
+.work {
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    margin-bottom: 100px;
+  }
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}
