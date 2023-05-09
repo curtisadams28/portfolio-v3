@@ -49,14 +49,28 @@ function App() {
 
       <div className='skills section'>
         <div className='section-content'>
-          <h1 className='heading'>Skills & Experience</h1>
-          <p>Curabitur tristique urna non quam rutrum convallis. Praesent at felis luctus, ultricies metus eu, fringilla nibh. Nunc elementum consequat velit, et rutrum orci. Sed condimentum placerat arcu, et vulputate urna faucibus quis.</p>
-          <h2 className='heading-sm'>Code</h2>
-          <Tags tagArray={Work.skills.code}/>
-          <h2 className='heading-sm'>Tools</h2>
-          <Tags tagArray={Work.skills.tools}/>
-          <h2 className='heading-sm'>Design</h2>
-          <Tags tagArray={Work.skills.design}/>
+        <h1 className='heading'>Skills & Experience</h1>
+          <div className='info-section'>
+            <p>Curabitur tristique urna non quam rutrum convallis. Praesent at felis luctus, ultricies metus eu, fringilla nibh. Nunc elementum consequat velit, et rutrum orci. Sed condimentum placerat arcu, et vulputate urna faucibus quis.</p>
+          </div>
+          <div className='info-section'>
+            <h2 className='heading-sm'>Code</h2>
+            <Tags tagArray={Work.skills.code} />
+          </div>
+          <div className='info-section'>
+            <h2 className='heading-sm'>Tools</h2>
+            <Tags tagArray={Work.skills.tools} />
+          </div>
+          <div className='info-section'>
+            <h2 className='heading-sm'>Design</h2>
+            <Tags tagArray={Work.skills.design} />
+          </div>
+        </div>
+      </div>
+
+      <div className='contact section'>
+        <div className='section-content'>
+        <h1 className='heading'>Contact</h1>
         </div>
       </div>
 

@@ -2,6 +2,7 @@
 - Mobile nav
 - Nav link animations
 - My Work animations
+- Preload images
 
 # Deprioritised
 - Parallax backgrounds
@@ -11,3 +12,4 @@
 
 # Bugs
 - My work images break site if the path is incorrect.
+- My work info jumps up if you click on the card while srolled down.

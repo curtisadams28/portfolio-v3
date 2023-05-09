@@ -1,9 +1,9 @@
 @use 'src/styles/variables' as var;
 
 .tags {
-  margin-top: 20px;
   display: flex;
   gap: 10px;
+  padding-top: 5px;
   span {
     background-color: var.$tag-bg;
     padding: 10px 20px;

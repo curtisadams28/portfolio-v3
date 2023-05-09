@@ -18,6 +18,8 @@ button {
 p {
   font-size: var.$text;
   line-height: 1.6em;
+  max-width: 650px;
+  margin: 0;
 }
 
 .heading {
@@ -27,11 +29,13 @@ p {
   font-weight: 400;
   color: var.$primary;
   margin: 0;
+  margin-block-end: -15px;
 }
 
 .heading-sm {
   font-size: 1.2em;
   color: white;
+  margin: 0 0 0.7em 0;
 }
 
 .section {
@@ -46,6 +50,6 @@ p {
   @include mixin.section-width();
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  //gap: 50px;
 }
 
