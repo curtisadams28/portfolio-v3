@@ -1,16 +1,19 @@
 import Navigation from './components/navigation/navigation';
-import Card from './components/card/card';
-import Button from './components/button/button';
+import WorkMenu from './components/work-card-grid/work-card-grid';
+import './styles/animations.scss';
+import Work from './my-work.json';
+import Tags from './components/tag/tags';
 
 import { ReactComponent as Mail } from './img/mail.svg';
 import { ReactComponent as Linkedin } from './img/linkedin.svg';
 import { ReactComponent as Github } from './img/github.svg';
 
 function App() {
+
   return (
     <div className="app">
       <Navigation />
-      <div className="hero section">
+      <div className="hero">
 
         <div className='section-content hero-content'>
           <h1 className='hero-heading'>Curtis Adams</h1>
@@ -19,8 +22,8 @@ function App() {
         <div className='hero-contact'>
           <div className='hero-contact-inner'>
             <div className='social-icons'>
-            <div className='vl'></div>
-            <a href="#">
+              <div className='vl'></div>
+              <a href="#">
                 <Mail />
               </a>
               <a href="#">
@@ -41,17 +44,22 @@ function App() {
         <div className='background-gradient'></div>
 
       </div>
-      <div className='work section'>
-        <div className='section-content'>
-          <h1 className='heading'>My Work</h1>
-          <div className='cards'>
-            <Card title='Shift72' info='Video on demand platform for film festivals.'/>
-            <Card title='Reroll' info='Recommendations for films and TV.'/>
-            <Card title='This Site' info='Portfolio to display my skills and work.'/>
-          </div>
 
+      <WorkMenu />
+
+      <div className='skills section'>
+        <div className='section-content'>
+          <h1 className='heading'>Skills & Experience</h1>
+          <p>Curabitur tristique urna non quam rutrum convallis. Praesent at felis luctus, ultricies metus eu, fringilla nibh. Nunc elementum consequat velit, et rutrum orci. Sed condimentum placerat arcu, et vulputate urna faucibus quis.</p>
+          <h2 className='heading-sm'>Code</h2>
+          <Tags tagArray={Work.skills.code}/>
+          <h2 className='heading-sm'>Tools</h2>
+          <Tags tagArray={Work.skills.tools}/>
+          <h2 className='heading-sm'>Design</h2>
+          <Tags tagArray={Work.skills.design}/>
         </div>
       </div>
+
     </div>
   );
 }

@@ -2,7 +2,11 @@
 
 @mixin section-width {
   width: 100%;
-  @media (min-width: var.$xl) {
-    width: var.$xl;
+  @media (min-width: var.$content-width-desktop) {
+    width: var.$content-width-desktop;
   }
+}
+
+@mixin transition {
+  transition: 0.2s ease-out;
 }

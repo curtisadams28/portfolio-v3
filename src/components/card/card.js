@@ -4,7 +4,7 @@ import './card.scss';
 
 function Card(props) {
   return(
-    <div className='card'>
+    <div className='card' onClick={() => props.handleCardClick(props.index)}>
       <h2>{props.title}</h2>
       <p>{props.info}</p>
       <button>

@@ -1,0 +1,14 @@
+@use 'src/styles/variables' as var;
+
+.tags {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  span {
+    background-color: var.$tag-bg;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.2);
+  }
+}

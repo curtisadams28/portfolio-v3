@@ -1,0 +1,63 @@
+@use 'src/styles/variables' as var;
+@use 'src/styles/mixins' as mixin;
+
+.work-page {
+  img {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    width: calc(100% - 2px);
+    height: 456px;
+  }
+  .info-section {
+    width: 650px;
+  }
+  p {
+    margin: 0;
+  }
+  h2 {
+    margin: 0 0 0.7em 0;
+  }
+}
+
+.close-info-page-button {
+  text-decoration: none;
+  background-color: var.$button-bg;
+  border: 0;
+  border-radius: 15px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-out;
+  svg {
+    transition: 0.2s ease-out;
+    margin-left: 15px;
+    * {
+      transition: 0.2s ease-out;
+      stroke: var.$button-text;
+    }
+  }
+  p {
+    transition: 0.2s ease-out;
+    margin-left: auto;
+    color: var.$button-text;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-right: 15px;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: var.$button-bg-hover;
+    svg {
+      margin-left: 10px;
+      * {
+        stroke: var.$button-text-hover;
+      }
+    }
+    p {
+      color: var.$button-text-hover;
+    }
+  }
+}
+
+
