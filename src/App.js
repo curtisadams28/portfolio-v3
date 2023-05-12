@@ -14,8 +14,8 @@ function App() {
   return (
     <div className="app">
       <Navigation />
-      <div className="hero">
 
+      <section id='home' className="hero">
         <div className='section-content hero-content'>
           <h1 className='hero-heading'>Curtis Adams</h1>
           <p className='hero-subheading'>Front End Developer</p>
@@ -24,13 +24,13 @@ function App() {
           <div className='hero-contact-inner'>
             <div className='social-icons'>
               <div className='vl'></div>
-              <a href="#">
+              <a href="mailto:curtisadams28@gmail.com" target='_blank'>
                 <Mail />
               </a>
-              <a href="#">
+              <a href="https://linkedin.com/in/curtis-dev" target='_blank'>
                 <Linkedin />
               </a>
-              <a href="#">
+              <a href="https://github.com/curtisadams28" target='_blank'>
                 <Github />
               </a>
 
@@ -43,14 +43,15 @@ function App() {
 
         </div>
         <div className='background-gradient'></div>
+      </section>
 
-      </div>
+      <section id='work'>
+        <WorkMenu />
+      </section>
 
-      <WorkMenu />
-
-      <div className='skills section'>
+      <section id='skills' className='skills section'>
         <div className='section-content'>
-        <h1 className='heading'>Skills & Experience</h1>
+          <h1 className='heading'>Skills & Experience</h1>
           <div className='info-section'>
             <p>Curabitur tristique urna non quam rutrum convallis. Praesent at felis luctus, ultricies metus eu, fringilla nibh. Nunc elementum consequat velit, et rutrum orci. Sed condimentum placerat arcu, et vulputate urna faucibus quis.</p>
           </div>
@@ -67,10 +68,11 @@ function App() {
             <Tags tagArray={Work.skills.design} />
           </div>
         </div>
-      </div>
+      </section>
 
-      <Contact />
-
+      <section id='contact'>
+        <Contact />
+      </section>
     </div>
   );
 }

@@ -75,6 +75,12 @@
 
 .social-icons svg {
   stroke: var.$primary;
+  transform: scale(1);
+  transition: 0.2s ease-out;
+  &:hover {
+    stroke: white;
+    transform: scale(1.1);
+  }
 }
 
 .social-icons, .email {

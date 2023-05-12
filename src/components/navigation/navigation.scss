@@ -11,6 +11,9 @@
   background-color: var.$nav-bg;
   z-index: 2;
   box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.15);
+  a {
+    display: flex;
+  }
 }
 
 .nav-inner {
@@ -29,15 +32,18 @@
   height: 55px;
 }
 
-.nav-links  {
+.nav-links {
   list-style-type: none;
   display: flex;
   gap: 30px;
-  color: var.$text-medium;
-  font-weight: 600;
-  font-size: 0.95em;
   margin-right: 30px;
   margin-left: auto;
+  a {
+    color: var.$text-medium;
+    font-weight: 600;
+    font-size: 0.95em;
+    text-decoration: none;
+  }
 }
 
 

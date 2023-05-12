@@ -1,10 +1,14 @@
 # TODO
 - Mobile nav
-- Nav link animations
-- My Work animations
+- Nav links and animations
 - Preload images
+- Loading Screen
+- Homepage social links
+- Add resume
 
 # Deprioritised
+- Footer
+- My Work animations
 - Parallax backgrounds
 - View large image on click
 - Custom scroll bar

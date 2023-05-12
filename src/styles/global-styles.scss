@@ -10,6 +10,7 @@ body {
   color: var.$text-medium;
   background-color: var.$bg-dark;
   overflow-anchor: none;
+  scroll-behavior: smooth;
   *::selection {
     color: white;
     background-color: var.$primary;
