@@ -1,5 +1,6 @@
 import Navigation from './components/navigation/navigation';
 import WorkMenu from './components/work-card-grid/work-card-grid';
+import Contact from './components/contact/contact';
 import './styles/animations.scss';
 import Work from './my-work.json';
 import Tags from './components/tag/tags';
@@ -68,11 +69,7 @@ function App() {
         </div>
       </div>
 
-      <div className='contact section'>
-        <div className='section-content'>
-        <h1 className='heading'>Contact</h1>
-        </div>
-      </div>
+      <Contact />
 
     </div>
   );
