@@ -1,9 +1,12 @@
 // Breakpoints
-$sm: 480px;
-$md: 768px;
-$lg: 1024px;
-$xl: 1200px;
-$xxl: 1400px;
+$breakpoints: (
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
 
 // Colors
 $primary: #987AB5;
@@ -13,7 +16,7 @@ $bg-light: #F2F2F2;
 $text-medium: rgba(255, 255, 255, .4);
 $white: #FFFFFF;
 $nav-bg: #251B2F;
-$card-bg: #16101F;
+$card-bg: #31214b; //16101F
 $card-bg-hover: #221a2e;
 $button-bg: #251B2F;
 $button-bg-hover: #342742;

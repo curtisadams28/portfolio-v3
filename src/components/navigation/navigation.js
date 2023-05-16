@@ -13,8 +13,8 @@ function Navigation() {
   return(
     <nav className='nav'>
       <div className='nav-inner'>
-        <a href="./">
-          <Clogo className='c-logo'/>
+        <a className='logo-link' href="./">
+          <Clogo className='logo'/>
         </a>
         <ul className='nav-links'>
           <li><a href="#home" onClick={handleClick}>Home</a></li>
@@ -22,7 +22,7 @@ function Navigation() {
           <li><a href="#skills" onClick={handleClick}>Skills</a></li>
           <li><a href="#contact" onClick={handleClick}>Contact</a></li>
         </ul>
-        <Button className='btn btn-nav' text='Resumé'/>
+        <Button className='btn btn-nav btn-resume' text='Resumé'/>
       </div>
 
         

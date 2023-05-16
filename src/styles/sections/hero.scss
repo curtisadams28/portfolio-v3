@@ -1,5 +1,5 @@
-
 @use 'src/styles/variables' as var;
+@use 'src/styles/mixins' as mixin;
 
 .hero {
   background-image: url('../../img/background.png');
@@ -65,9 +65,11 @@
   align-items: flex-end;
   margin-left: 50px;
   margin-right: 50px;
+  /*
   @media only screen and (min-width: var.$md) {
     width: 100%;
   }
+  */
   @media only screen and (min-width: 1600px){
     width: 1500px;
   }

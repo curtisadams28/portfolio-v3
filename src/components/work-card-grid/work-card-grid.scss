@@ -1,3 +1,6 @@
+@use 'src/styles/variables' as var;
+@use 'src/styles/mixins' as *;
+
 .work {
   .section-content {
     display: flex;
@@ -12,6 +15,9 @@
 
 .cards {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   gap: 30px;
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: auto auto auto;
+  }
 }

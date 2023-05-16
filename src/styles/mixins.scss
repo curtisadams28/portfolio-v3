@@ -1,12 +1,28 @@
-@use 'src/styles/variables' as var;
+@use 'src/styles/variables' as *;
 
 @mixin section-width {
   width: 100%;
-  @media (min-width: var.$content-width-desktop) {
-    width: var.$content-width-desktop;
+  @include media-breakpoint-up(lg) {
+    width: $content-width-desktop;
   }
 }
 
 @mixin transition {
   transition: 0.2s ease-out;
+}
+
+@mixin media-breakpoint-up($size) {
+  $value: map-get($breakpoints, $size);
+
+  @media only screen and (min-width: $value) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down($size) {
+  $value: map-get($breakpoints, $size);
+
+  @media only screen and (max-width: $value) {
+    @content;
+  }
 }

@@ -1,28 +1,28 @@
-@use 'src/styles/variables' as var;
-@use 'src/styles/mixins' as mixin;
+@use 'src/styles/variables' as *;
+@use 'src/styles/mixins' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comme:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
 body {
   margin: 0;
-  font-family: var.$font;
-  color: var.$text-medium;
-  background-color: var.$bg-dark;
+  font-family: $font;
+  color: $text-medium;
+  background-color: $bg-dark;
   overflow-anchor: none;
   scroll-behavior: smooth;
   *::selection {
     color: white;
-    background-color: var.$primary;
+    background-color: $primary;
   }
 }
 
 button {
-  font-family: var.$font;
+  font-family: $font;
 }
 
 p {
-  font-size: var.$text;
+  font-size: $text;
   line-height: 1.6em;
   max-width: 650px;
   margin: 0;
@@ -33,7 +33,7 @@ p {
   line-height: 0.9em;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
-  color: var.$primary;
+  color: $primary;
   margin: 0;
   margin-block-end: -15px;
 }
@@ -45,7 +45,7 @@ p {
 }
 
 label {
-  color: var.$primary;
+  color: $primary;
   font-size: 1em;
   margin: 0 0 0.7em 0;
   font-weight: 600;
@@ -55,12 +55,16 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px 0 300px 0;
+  padding: 200px 50px 300px 50px;
+  @include media-breakpoint-up(lg) {
+    padding: 200px 50px 300px 50px;
+  }
+
 
 }
 
 .section-content {
-  @include mixin.section-width();
+  @include section-width();
   display: flex;
   flex-direction: column;
   //gap: 50px;
@@ -68,7 +72,7 @@ label {
 
 .button {
   text-decoration: none;
-  background-color: var.$button-bg;
+  background-color: $button-bg;
   border: 0;
   border-radius: 15px;
   height: 50px;
@@ -77,15 +81,15 @@ label {
   align-items: center;
   justify-content: center;
   transition: 0.2s ease-out;
-  color: var.$button-text;
-  font-family: var.$font;
+  color: $button-text;
+  font-family: $font;
   font-size: 1em;
   font-weight: 700;
   transition: 0.2s ease-out;
   &:hover {
     cursor: pointer;
-    background-color: var.$button-bg-hover;
-    color: var.$button-text-hover;
+    background-color: $button-bg-hover;
+    color: $button-text-hover;
   }
 }
 
