@@ -5,6 +5,7 @@
 - Loading Screen
 - Homepage social links
 - Add resume
+- Buy domain
 
 # Deprioritised
 - Footer

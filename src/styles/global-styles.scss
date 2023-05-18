@@ -29,13 +29,16 @@ p {
 }
 
 .heading {
-  font-size: 6em;
+  font-size: 4em;
   line-height: 0.9em;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   color: $primary;
   margin: 0;
   margin-block-end: -15px;
+  @include media-breakpoint-up(lg) {
+    font-size: 6em;
+  }
 }
 
 .heading-sm {

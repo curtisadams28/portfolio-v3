@@ -1,4 +1,5 @@
 import Navigation from './components/navigation/navigation';
+import NavigationMobile from './components/navigation-mobile/navigationMobile';
 import WorkMenu from './components/work-card-grid/work-card-grid';
 import Contact from './components/contact/contact';
 import './styles/animations.scss';
@@ -14,7 +15,7 @@ function App() {
   return (
     <div className="app">
       <Navigation />
-
+      <NavigationMobile />
       <section id='home' className="hero">
         <div className='section-content hero-content'>
           <h1 className='hero-heading'>Curtis Adams</h1>

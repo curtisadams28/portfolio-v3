@@ -2,7 +2,7 @@
 @use 'src/styles/mixins' as *;
 
 .nav {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -11,6 +11,9 @@
   background-color: var.$nav-bg;
   z-index: 2;
   box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.15);
+  @include media-breakpoint-up(lg) {
+    display: flex;
+  }
 }
 
 .nav-inner {
@@ -35,7 +38,7 @@
 
 .nav-links {
   list-style-type: none;
-  display: none;
+  display: flex;
   gap: 30px;
   margin-right: 30px;
   margin-left: auto;
@@ -44,9 +47,6 @@
     font-weight: 600;
     font-size: 0.95em;
     text-decoration: none;
-  }
-  @include media-breakpoint-up(lg) {
-    display: flex;
   }
 }
 

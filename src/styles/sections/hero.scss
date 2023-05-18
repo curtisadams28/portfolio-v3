@@ -1,5 +1,5 @@
 @use 'src/styles/variables' as var;
-@use 'src/styles/mixins' as mixin;
+@use 'src/styles/mixins' as *;
 
 .hero {
   background-image: url('../../img/background.png');
@@ -24,14 +24,22 @@
 
 .hero-heading {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 8em;
+  font-size: 4em;
   font-weight: 400;
   color: var.$white;
   text-align: center;
   line-height: 0;
   margin-bottom: 50px;
+  @include media-breakpoint-up(sm) {
+    font-size: 5em;
+  }
 
-
+  @include media-breakpoint-up(md) {
+    font-size: 6em;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 8em;
+  }
 }
 
 .background-gradient {
@@ -80,7 +88,7 @@
   transform: scale(1);
   transition: 0.2s ease-out;
   &:hover {
-    stroke: white;
+    stroke: #a88cc2;
     transform: scale(1.1);
   }
 }

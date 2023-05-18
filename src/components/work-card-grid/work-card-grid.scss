@@ -17,6 +17,11 @@
   display: grid;
   grid-template-columns: auto;
   gap: 30px;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    width: auto;
+    grid-template-columns: auto auto;
+  }
   @include media-breakpoint-up(lg) {
     grid-template-columns: auto auto auto;
   }
