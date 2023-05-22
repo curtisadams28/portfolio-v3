@@ -96,3 +96,21 @@ label {
   }
 }
 
+// Custom Scrollbar
+/* For WebKit-based browsers (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: $scrollbar-bg; /* White with half opacity */
+  padding: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  padding-left: 5px;
+  background-color: $scrollbar-color; /* White */
+  transition: background-color 0.2s ease-out;
+  &:hover {
+    background-color: $primary;
+    cursor: pointer;
+  }
+}

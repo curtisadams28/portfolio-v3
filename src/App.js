@@ -6,15 +6,24 @@ import './styles/animations.scss';
 import Work from './my-work.json';
 import Tags from './components/tag/tags';
 
+import { useState, useEffect } from "react";
+
 import { ReactComponent as Mail } from './img/mail.svg';
 import { ReactComponent as Linkedin } from './img/linkedin.svg';
 import { ReactComponent as Github } from './img/github.svg';
 
 function App() {
 
+  const [linkPosition, setLinkPosition] = useState(null);
+
+  useEffect(() => {
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="app">
-      <Navigation />
+      <Navigation linkPosition={linkPosition}/>
       <NavigationMobile />
       <section id='home' className="hero">
         <div className='section-content hero-content'>
@@ -76,6 +85,36 @@ function App() {
       </section>
     </div>
   );
+
+  function handleScroll() {
+
+    // Select all the navigation links
+    const navLinks = document.querySelectorAll('.nav-links-desktop a, .nav-links-mobile a');
+    const fromTop = window.scrollY;
+
+    // Iterate through each navigation link
+    navLinks.forEach(link => {
+      const section = document.querySelector(link.hash);
+      // Check if the section is in the viewport
+      if (
+        section.offsetTop <= fromTop + 100 &&
+        section.offsetTop + section.offsetHeight > fromTop + 100
+      ) {
+        // Add a class to the corresponding navigation link
+        link.classList.add('active');
+
+        if (link.offsetLeft != 0) {
+          //console.log(link.offsetLeft + (link.offsetWidth / 2));
+          setLinkPosition(link.offsetLeft + (link.offsetWidth / 2));
+        }
+
+
+      } else {
+        // Remove the class from other navigation links
+        link.classList.remove('active');
+      }
+    });
+  }
 }
 
 export default App;

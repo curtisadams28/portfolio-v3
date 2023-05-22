@@ -1,5 +1,5 @@
 # TODO
-- Mobile nav
+- Resume button mobile
 - Nav links and animations
 - Preload images
 - Loading Screen
@@ -7,7 +7,9 @@
 - Add resume
 - Buy domain
 
+
 # Deprioritised
+- Width animation on nav link line
 - Footer
 - My Work animations
 - Parallax backgrounds

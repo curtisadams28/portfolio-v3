@@ -1,7 +1,7 @@
 @use 'src/styles/variables' as var;
 @use 'src/styles/mixins' as *;
 
-.nav {
+.nav-desktop {
   display: none;
   justify-content: center;
   align-items: center;
@@ -36,7 +36,8 @@
   height: 55px;
 }
 
-.nav-links {
+.nav-links-desktop {
+  position: relative;
   list-style-type: none;
   display: flex;
   gap: 30px;
@@ -48,6 +49,18 @@
     font-size: 0.95em;
     text-decoration: none;
   }
+}
+
+.nav-line {
+  width: 30px;
+  height: 4px;
+  background-color: var.$primary;
+  position: absolute;
+  bottom: -10px;
+  border-radius: 5px;
+  left: 61.5px;
+  transform: translate(-50%, 0);
+  transition: left 0.4s ease-in-out;
 }
 
 .btn-resume {

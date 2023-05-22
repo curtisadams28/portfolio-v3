@@ -1,26 +1,25 @@
 @use 'src/styles/variables' as var;
 @use 'src/styles/mixins' as *;
 
-.mobile-nav {
-  background-color: var.$primary;
+.nav-mobile {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 63px;
-  height: 63px;
   z-index: 4;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
   @include media-breakpoint-up(lg) {
     display: none;
   }
-}
-
-.mobile-nav-links {
-  display: none;
+  * {
+    pointer-events: all;
+  }
 }
 
 .menu-toggle {
-  background: transparent;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var.$primary;
   border: 0;
   width: 63px;
   height: 63px;
@@ -31,7 +30,10 @@
   align-items: center;
   box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.30);
   border-radius: 50%;
-  position: relative;
+  z-index: 6;
+  &:hover {
+    cursor: pointer;
+  }
   
   .toggle-line {
     background-color: white;
@@ -39,7 +41,6 @@
     width: 24px;
     position: absolute;
     transition: top 0.1s 0.1s ease-in, transform 0.1s ease-in, width 0.1s ease-in;
-    
   }
   $offset: 22px;
   .toggle-line-1 {
@@ -54,7 +55,44 @@
   }
 }
 
-.mobile-nav.open {
+.nav-content {
+  background-color: var.$bg-dark;
+  position: relative;
+  top: 0;
+  left: 100%;
+  height: 100svh;
+  z-index: 5;
+  transition: 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  padding: 150px 20px 20px 20px;
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: flex;
+  }
+  li a {
+    text-decoration: none;
+    color: var.$text-medium;
+    font-size: 1.3em;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    &:active {
+      background-color: var.$card-bg-hover;
+    }
+  }
+  .active {
+    background-color: var.$card-bg-hover;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.nav-mobile.open {
   .toggle-line {
     transition: top 0.1s ease-out, transform 0.2s 0.1s ease-out, width 0.2s 0.1s ease-out;
     top: 30px;
@@ -67,5 +105,13 @@
   }
   .toggle-line-3 {
     transform: rotate(-45deg);
+  }
+}
+
+.nav-mobile.open {
+  width: 100%;
+  height: 100%;
+  .nav-content {
+    left: 0;
   }
 }

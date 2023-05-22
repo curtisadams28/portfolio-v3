@@ -12,10 +12,6 @@ function WorkMenu() {
     setWorkItem(index);
   };
 
-  useEffect(() => {
-    console.log(workItem);
-  }, [workItem]);
-
   if (workItem === null) {
     return (
       <div className='work section'>

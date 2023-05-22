@@ -1,34 +1,58 @@
 import './navigation.scss';
 import { ReactComponent as Clogo } from '../../img/c-logo.svg';
 
+import { useState, useEffect } from "react";
+
 import Button from '../button/button';
 
-function handleClick(e) {
-  e.preventDefault();
-  const target = document.querySelector(e.target.hash);
-  target.scrollIntoView({ behavior: 'smooth' });
-}
+function Navigation(props) {
 
-function Navigation() {
+  const [linkPosition, setLinkPosition] = useState(null);
+
+  useEffect(() => {
+    if (props.linkPosition != null) {
+      //console.log(props.scrollLink.offsetLeft);
+      //console.log(props.scrollLink.style);
+      //console.log(props.linkPosition);
+      setLinkPosition(props.linkPosition);
+
+
+      
+    }
+
+  }, [props.linkPosition]);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+  
+    // Scrolls to the section clicked by the user.
+    const target = document.querySelector(e.target.hash);
+    target.scrollIntoView({ behavior: 'smooth' });
+    const position = e.target.offsetLeft + (e.target.offsetWidth / 2);
+    setLinkPosition(position);
+  
+  }
+
   return(
-    <nav className='nav'>
+    <nav className='nav-desktop'>
       <div className='nav-inner'>
         <a className='logo-link' href="./">
           <Clogo className='logo'/>
         </a>
-        <ul className='nav-links'>
+        <ul className='nav-links-desktop'>
           <li><a href="#home" onClick={handleClick}>Home</a></li>
           <li><a href="#work" onClick={handleClick}>Work</a></li>
           <li><a href="#skills" onClick={handleClick}>Skills</a></li>
           <li><a href="#contact" onClick={handleClick}>Contact</a></li>
+          <div className='nav-line' style={{ left: `${linkPosition}px` }}></div>
         </ul>
         <Button className='btn btn-nav btn-resume' text='Resumé'/>
       </div>
-
-        
-        
     </nav>
   );
 }
+
+// Remove the event listener for scrolling here. Add it again after 0.5s.
+
 
 export default Navigation;
