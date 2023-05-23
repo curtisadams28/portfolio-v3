@@ -9,15 +9,11 @@ function Navigation(props) {
 
   const [linkPosition, setLinkPosition] = useState(null);
 
+
+
   useEffect(() => {
     if (props.linkPosition != null) {
-      //console.log(props.scrollLink.offsetLeft);
-      //console.log(props.scrollLink.style);
-      //console.log(props.linkPosition);
       setLinkPosition(props.linkPosition);
-
-
-      
     }
 
   }, [props.linkPosition]);
@@ -29,8 +25,8 @@ function Navigation(props) {
     const target = document.querySelector(e.target.hash);
     target.scrollIntoView({ behavior: 'smooth' });
     const position = e.target.offsetLeft + (e.target.offsetWidth / 2);
-    setLinkPosition(position);
-  
+    setLinkPosition(position);  
+    props.pauseHandleScroll();
   }
 
   return(

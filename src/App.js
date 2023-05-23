@@ -15,15 +15,23 @@ import { ReactComponent as Github } from './img/github.svg';
 function App() {
 
   const [linkPosition, setLinkPosition] = useState(null);
+  const [scrollListenerActive, setScrollListenerActive] = useState(true);
 
   useEffect(() => {
-    // Attach the scroll event listener
-    window.addEventListener('scroll', handleScroll);
-  }, []);
+    if (scrollListenerActive) {
+      // Attach the scroll event listener
+      window.addEventListener('scroll', handleScroll);
+    }
+
+    // Clean up the event listener when the component unmounts or when scrollListenerActive changes to false
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrollListenerActive]);
 
   return (
     <div className="app">
-      <Navigation linkPosition={linkPosition}/>
+      <Navigation linkPosition={linkPosition} pauseHandleScroll={pauseHandleScroll}/>
       <NavigationMobile />
       <section id='home' className="hero">
         <div className='section-content hero-content'>
@@ -86,7 +94,16 @@ function App() {
     </div>
   );
 
+  // Pauses so that clicking a link doesn't trigger changing the link position on scroll.
+  function pauseHandleScroll() {
+    setScrollListenerActive(false);
+    setTimeout(() => {
+      setScrollListenerActive(true);
+    }, 1000);
+  }
+
   function handleScroll() {
+    console.log('handled');
 
     // Select all the navigation links
     const navLinks = document.querySelectorAll('.nav-links-desktop a, .nav-links-mobile a');
@@ -97,8 +114,8 @@ function App() {
       const section = document.querySelector(link.hash);
       // Check if the section is in the viewport
       if (
-        section.offsetTop <= fromTop + 100 &&
-        section.offsetTop + section.offsetHeight > fromTop + 100
+        section.offsetTop <= fromTop + 400 &&
+        section.offsetTop + section.offsetHeight > fromTop + 400
       ) {
         // Add a class to the corresponding navigation link
         link.classList.add('active');
