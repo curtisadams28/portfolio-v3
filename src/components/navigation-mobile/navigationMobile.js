@@ -1,4 +1,3 @@
-import Button from '../button/button';
 import './navigationMobile.scss';
 import { useState } from "react";
 
@@ -11,10 +10,14 @@ function NavigationMobile() {
       setToggleActive(true);
       document.querySelector('.nav-mobile').classList.remove('closed');
       document.querySelector('.nav-mobile').classList.add('open');
+      document.querySelector('body').style.overflow = 'hidden';
+
     } else {
       setToggleActive(false);
       document.querySelector('.nav-mobile').classList.remove('open');
       document.querySelector('.nav-mobile').classList.add('closed');
+      document.querySelector('body').style.overflow = 'auto';
+
     }
   }
 
@@ -32,7 +35,7 @@ function NavigationMobile() {
         <li><a onClick={menuToggle} href="#skills">Skills</a></li>
         <li><a onClick={menuToggle} href="#contact">Contact</a></li>
       </ul>
-      <Button className='btn btn-nav btn-resume' text='Resumé'/>
+      <button className='btn btn-resume btn-resume-mobile'>Resumé</button>
     </div>
   </nav>
   );

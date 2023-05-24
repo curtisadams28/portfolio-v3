@@ -48,6 +48,10 @@
     font-weight: 600;
     font-size: 0.95em;
     text-decoration: none;
+    transition: color 0.2s ease-out;
+    &:hover {
+      color: var.$text-medium-hover;
+    }
   }
 }
 
@@ -62,12 +66,4 @@
   transform: translate(-50%, 0);
   transition: left 0.4s ease-in-out;
 }
-
-.btn-resume {
-  display: none;
-  @include media-breakpoint-up(lg) {
-    display: block;
-  }
-}
-
 

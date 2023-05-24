@@ -3,8 +3,6 @@ import { ReactComponent as Clogo } from '../../img/c-logo.svg';
 
 import { useState, useEffect } from "react";
 
-import Button from '../button/button';
-
 function Navigation(props) {
 
   const [linkPosition, setLinkPosition] = useState(null);
@@ -42,7 +40,7 @@ function Navigation(props) {
           <li><a href="#contact" onClick={handleClick}>Contact</a></li>
           <div className='nav-line' style={{ left: `${linkPosition}px` }}></div>
         </ul>
-        <Button className='btn btn-nav btn-resume' text='Resumé'/>
+        <button className='btn btn-resume btn-resume-desktop'>Resumé</button>
       </div>
     </nav>
   );

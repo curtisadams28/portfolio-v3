@@ -99,7 +99,7 @@ function App() {
     setScrollListenerActive(false);
     setTimeout(() => {
       setScrollListenerActive(true);
-    }, 1000);
+    }, 500);
   }
 
   function handleScroll() {

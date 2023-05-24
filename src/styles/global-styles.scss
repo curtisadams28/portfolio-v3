@@ -1,8 +1,7 @@
 @use 'src/styles/variables' as *;
 @use 'src/styles/mixins' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comme:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comme:wght@400;500;600;700');
 
 body {
   margin: 0;
@@ -11,6 +10,10 @@ body {
   background-color: $bg-dark;
   overflow-anchor: none;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Bebas Neue', sans-serif;
+font-family: 'Comme', sans-serif;
+  
   *::selection {
     color: white;
     background-color: $primary;
