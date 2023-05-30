@@ -1,6 +1,4 @@
 # TODO
-
-- Write content
 - Setup domain for netlify
 - Add email.js keys
 
@@ -29,6 +27,7 @@
 - Take screenshots
 - Buy domain
 - Add resume
+- Write content
 
 # Bugs
 - My work images break site if the path is incorrect.
