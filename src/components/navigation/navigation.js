@@ -40,7 +40,7 @@ function Navigation(props) {
           <li><a href="#contact" onClick={handleClick}>Contact</a></li>
           <div className='nav-line' style={{ left: `${linkPosition}px` }}></div>
         </ul>
-        <button className='btn btn-resume btn-resume-desktop'>Resumé</button>
+        <a href="/Curtis Adams - Resumé.pdf" target="_blank" rel="noopener noreferrer" className='btn btn-resume btn-resume-desktop'>Resumé</a>
       </div>
     </nav>
   );

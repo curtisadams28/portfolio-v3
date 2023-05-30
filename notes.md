@@ -1,7 +1,8 @@
 # TODO
-- Add resume
-- Buy domain
+
 - Write content
+- Setup domain for netlify
+- Add email.js keys
 
 # Deprioritised
 - External link icon
@@ -16,6 +17,9 @@
 - Preload images
 - Loading Screen
 - Form validation
+- About me section
+- Replace background
+- Accessability: alt tags, contrast.
 
 # Done
 - Nav links and animations
@@ -23,14 +27,17 @@
 - Custom scroll bar
 - Resume button mobile
 - Take screenshots
+- Buy domain
+- Add resume
 
 # Bugs
 - My work images break site if the path is incorrect.
 - Active link only starts on scoll (need to set home as initial state)
-- Performance issues on mobile?
+
 
 # Fixed
 - My work info jumps up if you click on the card while srolled down.
 - Work info image borked.
 - Nav line breaks if links are clicked rapidly (Due to multiple timeouts running simultaneously)
 - Work info no wrapping on text and tags.
+- Performance issues on mobile?

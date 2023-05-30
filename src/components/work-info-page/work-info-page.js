@@ -18,7 +18,7 @@ function WorkInfoPage(props) {
         }
         <div className='info-section'>
           <h2 className='heading-sm'>About</h2>
-          <p>{pageData.about}</p> 
+          <p>{pageData.about}</p>
         </div>
         <div className='info-section'>
           <h2 className='heading-sm'>Technologies</h2>

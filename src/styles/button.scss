@@ -7,15 +7,18 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 1em;
-  transition: background-color 0.2s;
-  transition: color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
   height: 55px;
   align-self: center;
   border: 0;
   color: var.$white;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     cursor: pointer;
+    background-color: #79549c; // Remove hardcoded colour
   }
 }
 
@@ -40,5 +43,6 @@
 
 .btn-resume {
   height: 44px;
+  text-decoration: none;
 }
 

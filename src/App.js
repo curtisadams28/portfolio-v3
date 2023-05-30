@@ -71,7 +71,7 @@ function App() {
         <div className='section-content'>
           <h1 className='heading'>Skills & Experience</h1>
           <div className='info-section'>
-            <p>Curabitur tristique urna non quam rutrum convallis. Praesent at felis luctus, ultricies metus eu, fringilla nibh. Nunc elementum consequat velit, et rutrum orci. Sed condimentum placerat arcu, et vulputate urna faucibus quis.</p>
+            <p>As a developer who is proficient with both code and design, my strengths lie in creating applications that look great without sacrificing functionality. After 2 years in the industry as a Front-End Developer, I am beginning to expand into Full-Stack development.</p>
           </div>
           <div className='info-section'>
             <h2 className='heading-sm'>Code</h2>
@@ -103,7 +103,6 @@ function App() {
   }
 
   function handleScroll() {
-    console.log('handled');
 
     // Select all the navigation links
     const navLinks = document.querySelectorAll('.nav-links-desktop a, .nav-links-mobile a');
