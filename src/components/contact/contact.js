@@ -5,12 +5,8 @@ import './contact.scss'
 export const Contact = () => {
   const form = useRef();
 
+  // Currently inactive as I need to hide email.js keys.
   const send = false;
-
-  let templateParams = {
-    name: 'James',
-    notes: 'Check this out!'
-  };
 
   const sendEmail = (e) => {
     e.preventDefault();
