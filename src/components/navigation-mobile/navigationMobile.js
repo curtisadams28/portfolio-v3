@@ -35,7 +35,7 @@ function NavigationMobile() {
         <li><a onClick={menuToggle} href="#skills">Skills</a></li>
         <li><a onClick={menuToggle} href="#contact">Contact</a></li>
       </ul>
-      <button className='btn btn-resume btn-resume-mobile'>Resumé</button>
+        <button className='btn btn-resume btn-resume-mobile'>Resumé</button>
     </div>
   </nav>
   );

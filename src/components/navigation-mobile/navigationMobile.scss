@@ -66,7 +66,7 @@
   transition: 0.3s ease-out;
   display: flex;
   flex-direction: column;
-  padding: 150px 20px 20px 20px;
+  padding: 110px 20px 20px 20px;
   ul {
     list-style-type: none;
     padding: 0;
@@ -118,7 +118,8 @@
 }
 
 .btn-resume-mobile {
-  margin-top: auto;
+ position: absolute;
+ bottom: 150px;
+ width: calc(100% - 40px);
+ height: 60px;
 }
-
-

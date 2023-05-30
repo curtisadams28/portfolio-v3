@@ -7,30 +7,48 @@
       "about": "Curabitur tristique urna non quam rutrum convallis. Praesent at felis luctus, ultricies metus eu, fringilla nibh. Nunc elementum consequat velit, et rutrum orci. Sed condimentum placerat arcu, et vulputate urna faucibus quis.",
       "technologies": [
         "HTML",
-        "CSS",
         "SASS",
         "Javascript",
         "React",
-        "Ruby"
+        "Ruby",
+        "PostgreSQL"
       ],
-      "github": "github link",
-      "website": "https://fakewebsite.com"
+      "github": "github.com/shift72/core-template",
+      "githubLink": "https://github.com/shift72/core-template",
+      "website": "tvoddemo.shift72.com",
+      "websiteLink": "https://tvoddemo.shift72.com/"
     },
     {
       "title": "Reroll",
       "cardInfo": "Recommendations for films and TV.",
-      "description": "This is a description",
       "imageFile": "reroll.jpg",
-      "github": "github link",
-      "website": "https://fakewebsite.com"
+      "about": "Curabitur tristique urna non quam rutrum convallis. Praesent at felis luctus, ultricies metus eu, fringilla nibh. Nunc elementum consequat velit, et rutrum orci. Sed condimentum placerat arcu, et vulputate urna faucibus quis.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "React",
+        "TMDB API"
+      ],
+      "github": "github.com/curtisadams28/Reroll",
+      "githubLink": "https://github.com/curtisadams28/Reroll",
+      "website": "reroll.netlify.app",
+      "websiteLink": "https://reroll.netlify.app/"
     },
     {
       "title": "This Site",
       "cardInfo": "Portfolio to display my skills and work.",
-      "description": "This is a description",
-      "imageFile": "",
-      "github": "github link",
-      "website": "https://fakewebsite.com"
+      "imageFile": "this-site.jpg",
+      "about": "Curabitur tristique urna non quam rutrum convallis. Praesent at felis luctus, ultricies metus eu, fringilla nibh. Nunc elementum consequat velit, et rutrum orci. Sed condimentum placerat arcu, et vulputate urna faucibus quis.",
+      "technologies": [
+        "HTML",
+        "SASS",
+        "React",
+        "Email.js"
+      ],
+      "github": "github.com/curtisadams28/portfolio-v3",
+      "githubLink": "https://github.com/curtisadams28/portfolio-v3",
+      "website": "",
+      "websiteLink": ""
     }
   ],
   "skills": {

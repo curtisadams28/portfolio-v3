@@ -38,7 +38,7 @@ export const Contact = () => {
     <div className='contact section'>
       <div className='section-content'>
         <h1 className='heading'>Get In Touch</h1>
-        <p>You can also email me directly at: <a href="mailto:curtisadams28@gmail.com">curtisadams28@gmail.com</a>.</p>
+        <p>You can also email me directly at: <a href="mailto:curtisadams28@gmail.com">curtisadams28@gmail.com</a></p>
         <form className='contact-form' ref={form} onSubmit={sendEmail}>
           <div className='form-item sender-name'>
             <label>Name</label>
