@@ -1,5 +1,4 @@
 # TODO
-- Setup domain for netlify
 - Add email.js keys
 
 # Deprioritised
@@ -18,6 +17,7 @@
 - About me section
 - Replace background
 - Accessability: alt tags, contrast.
+- Fix npm warnings.
 
 # Done
 - Nav links and animations
@@ -28,6 +28,7 @@
 - Buy domain
 - Add resume
 - Write content
+- Setup domain for netlify
 
 # Bugs
 - My work images break site if the path is incorrect.

@@ -6,12 +6,12 @@ export const Contact = () => {
   const form = useRef();
 
   // Currently inactive as I need to hide email.js keys.
-  const send = false;
+  const send = true;
 
   const sendEmail = (e) => {
     e.preventDefault();
     if (send) {
-      emailjs.sendForm('s', 't', form.current, '')
+      emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.PUBLIC_KEY)
 
         .then((result) => {
           console.log(result.text);
@@ -26,7 +26,6 @@ export const Contact = () => {
   const handleTextareaInput = (e) => {
     e.target.style.height = 'auto';
     e.target.style.height = `${e.target.scrollHeight - 40}px`;
-    
   };
 
   return (
