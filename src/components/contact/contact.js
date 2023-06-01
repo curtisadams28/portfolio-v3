@@ -1,22 +1,28 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import './contact.scss'
+import './contact.scss';
+import { useState, useEffect } from "react";
+import EmailBanner from '../email-banner/emailBanner';
 
 export const Contact = () => {
+
+  const [sendSuccess, setSendSuccess] = useState(null);
+
   const form = useRef();
 
-  // Currently inactive as I need to hide email.js keys.
   const send = true;
 
   const sendEmail = (e) => {
     e.preventDefault();
     if (send) {
-      emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.PUBLIC_KEY)
-
+      //console.log(form.current);
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
         .then((result) => {
-          console.log(result.text);
+          setSendSuccess(true);
+          form.current.reset();
         }, (error) => {
           console.log(error.text);
+          setSendSuccess(false);
         });
     } else {
       console.log('Send Blocked');
@@ -28,11 +34,22 @@ export const Contact = () => {
     e.target.style.height = `${e.target.scrollHeight - 40}px`;
   };
 
+  function resetForm() {
+    setSendSuccess(null);
+    form.current.reset();
+  }
+
   return (
     <div className='contact section'>
       <div className='section-content'>
         <h1 className='heading'>Get In Touch</h1>
         <p>You can also email me directly at: <a href="mailto:curtisadams28@gmail.com">curtisadams28@gmail.com</a></p>
+        {sendSuccess &&
+          <EmailBanner type='success' message='Email sent!' resetForm={resetForm}/>
+        }
+        {sendSuccess === false &&
+          <EmailBanner type='error' message='There was an error.' resetForm={resetForm}/>
+        }
         <form className='contact-form' ref={form} onSubmit={sendEmail}>
           <div className='form-item sender-name'>
             <label>Name</label>
