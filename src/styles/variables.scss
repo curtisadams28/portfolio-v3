@@ -8,6 +8,7 @@ $breakpoints: (
 );
 
 // Colors
+
 $primary: #987AB5;
 $secondary: #D23C73;
 $bg-dark: #0D0913;
@@ -16,15 +17,16 @@ $text-medium: rgba(255, 255, 255, .4);
 $text-medium-hover: rgba(255, 255, 255, .6);
 $white: #FFFFFF;
 $nav-bg: #251B2F;
-$card-bg: #16101F; //16101F
-$card-bg-hover: #221a2e;
+$card-bg: #1f162c; //16101F
+$card-bg-hover: #312543;
 $button-bg: #251B2F;
 $button-bg-hover: #342742;
 $button-text: #564367; 
 $button-text-hover: #837294;
-$tag-bg: rgba(255,255,255,0.05);
+$tag-bg: rgba(255, 255, 255, 0.1);
 $scrollbar-bg: #0D0913;
 $scrollbar-color:rgba(255, 255, 255, 0.307);
+
 
 $section1: #2C2C33;
 $skills-bg: #130F1A;
