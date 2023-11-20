@@ -60,7 +60,7 @@ function App() {
           </div>
 
         </div>
-        <div className='background-gradient'></div>
+        
       </section>
 
       <section id='work'>

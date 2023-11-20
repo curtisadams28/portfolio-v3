@@ -18,8 +18,7 @@
   }
   p {
     line-height: 1.7em;
-    color: white;
-    opacity: 0.4;
+    color: $text-medium;
     margin: 0;
     max-width: 250px;
     @include media-breakpoint-up(md) {
@@ -30,8 +29,8 @@
   button {
     margin: auto 0 45px 0;
     text-decoration: none;
-    color: white;
-    opacity: 0.2;
+    color: $text-medium;
+    opacity: 0.6;
     font-size: 0.9em;
     background-color: transparent;
     border: 0;
@@ -44,6 +43,9 @@
   svg {
     margin-top: 1px;
     transition: 0.2s ease-out;
+    path, line {
+      stroke: $text-medium;
+    }
   }
   p, h2, button {
     padding: 0 45px;
@@ -54,10 +56,14 @@
     background-color: $card-bg-hover;
     //box-shadow: 0px 0px 50px rgba($color: #000000, $alpha: 0.2);
     button {
-      opacity: 0.6;
+      color: $text-medium-hover;
+      opacity: 1;
     }
     svg {
       margin-left: 5px;
+      path, line {
+        stroke: $text-medium-hover;
+      }
     }
   }
 }

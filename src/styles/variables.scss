@@ -7,29 +7,35 @@ $breakpoints: (
   xxl: 1400px
 );
 
+$hero-width: 2000px;
+
 // Colors
-
-$primary: #987AB5;
-$secondary: #D23C73;
-$bg-dark: #0D0913;
-$bg-light: #F2F2F2;
-$text-medium: rgba(255, 255, 255, .4);
-$text-medium-hover: rgba(255, 255, 255, .6);
+$primary: #899C40;
+$primary-hover: #9fb153;
+$secondary: #DBBC7F;
+$bg-dark: #22282C;
+$bg-light: #2F363B;
+$bg-light-hover: #323a3f;
+$text-medium: #7F897D;
+$text-medium-hover: #b9c8b7;
 $white: #FFFFFF;
-$nav-bg: #251B2F;
-$card-bg: #1f162c; //16101F
-$card-bg-hover: #312543;
-$button-bg: #251B2F;
-$button-bg-hover: #342742;
-$button-text: #564367; 
-$button-text-hover: #837294;
-$tag-bg: rgba(255, 255, 255, 0.1);
-$scrollbar-bg: #0D0913;
-$scrollbar-color:rgba(255, 255, 255, 0.307);
+$nav-bg: $bg-light;
+$card-bg: $bg-light;
+$card-bg-hover: $bg-light-hover;
+$button-bg: $bg-light;
+$button-bg-hover: $primary-hover;
+$button-text: $text-medium; 
+$button-text-hover: $bg-light-hover;
+$tag-bg: $bg-light;
+$tag-text: $text-medium;
+$scrollbar-bg: $bg-light;
+$scrollbar-color: $text-medium;
+$form-text: $text-medium;
+$form-text-focus: $text-medium-hover;
 
 
-$section1: #2C2C33;
-$skills-bg: #130F1A;
+$section1: $bg-dark;
+$skills-bg: #1a1e21;
 
 // Font
 $font: 'Comme', sans-serif;

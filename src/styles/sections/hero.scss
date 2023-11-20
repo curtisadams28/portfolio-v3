@@ -2,7 +2,7 @@
 @use 'src/styles/mixins' as *;
 
 .hero {
-  background-image: url('../../img/background.jpg');
+  //background-image: url('../../img/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100svh;
@@ -26,7 +26,7 @@
   font-family: 'Bebas Neue', sans-serif;
   font-size: 4em;
   font-weight: 400;
-  color: var.$white;
+  color: var.$primary;
   text-align: center;
   line-height: 0;
   
@@ -86,16 +86,16 @@
     margin: 0 50px;
   }
   @media only screen and (min-width: 1600px){
-    width: 1500px;
+    width: var.$hero-width;
   }
 }
 
 .social-icons svg {
-  stroke: var.$primary;
+  stroke: var.$text-medium;
   transform: scale(1);
   transition: 0.2s ease-out;
   &:hover {
-    stroke: #a88cc2;
+    stroke: var.$text-medium-hover;
     transform: scale(1.1);
   }
 }
@@ -109,7 +109,7 @@
   .vl {
     display: none;
     flex-grow: 1;
-    border-left: 2px solid var.$primary;
+    border-left: 2px solid var.$text-medium;
     @include media-breakpoint-up(lg) {
       display: block;
     }
@@ -132,7 +132,7 @@
   p {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: var.$primary;
+    color: var.$text-medium;
     margin: 0;
     line-height: 0;
   }
