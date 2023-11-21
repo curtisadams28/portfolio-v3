@@ -1,9 +1,15 @@
 import './work-info-page.scss';
 import Tags from '../tag/tags';
 import Work from '../../my-work.json';
+import React, { useState } from "react";
 import { ReactComponent as LeftArrow } from '../../img/left-arrow.svg';
 
+
+
 function WorkInfoPage(props) {
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   const pageData = Work.myWorkArray[props.index];
   return (
     <div className='work-page section'>
@@ -14,7 +20,12 @@ function WorkInfoPage(props) {
           <p>Back to projects</p>
         </button>
         {pageData.imageFile &&
-          <img className='fade-in' src={require(`../../img/${pageData.imageFile}`)} alt="" />
+          <img
+            className={`img-fade-in ${imageLoaded ? "img-loaded" : ""}`}
+            src={require(`../../img/${pageData.imageFile}`)}
+            alt=""
+            onLoad={() => setImageLoaded(true)}
+          />
         }
         <div className='info-section'>
           <h2 className='heading-sm'>About</h2>
