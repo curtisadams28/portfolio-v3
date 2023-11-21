@@ -117,3 +117,10 @@ label {
     cursor: pointer;
   }
 }
+
+.background-img {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/background.svg');
+}

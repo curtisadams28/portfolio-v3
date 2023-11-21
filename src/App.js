@@ -31,6 +31,7 @@ function App() {
 
   return (
     <div className="app">
+      <div className='background-img'></div>
       <Navigation linkPosition={linkPosition} pauseHandleScroll={pauseHandleScroll}/>
       <NavigationMobile />
       <section id='home' className="hero">

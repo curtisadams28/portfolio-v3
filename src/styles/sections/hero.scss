@@ -3,8 +3,27 @@
 
 .hero {
   //background-image: url('../../img/background.jpg');
+
+  /*
+  background-image: url('../../img/dot.svg');
+  background-size: 1%;
+
+  */
+
+
+  
+  
+  
+
+  //background-image: url('../../img/flat-mountains.svg');
+  /*
   background-size: cover;
   background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 100% 100%;
+  */
+  //background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43));
+  
   height: 100svh;
   z-index: 1;
   position: relative;

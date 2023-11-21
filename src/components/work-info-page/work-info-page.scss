@@ -20,7 +20,7 @@
   }
   // Temp styling. Create generic link styles.
   a {
-    color: rgba(255, 255, 255, 0.4);
+    color: var.$text-medium;
     text-decoration: none;
     &:hover {
       color: var.$primary;
