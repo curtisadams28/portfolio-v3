@@ -53,15 +53,15 @@ export const Contact = () => {
         <form className='contact-form' ref={form} onSubmit={sendEmail}>
           <div className='form-item sender-name'>
             <label>Name</label>
-            <input className='form-field sender-name' type="text" name="sender_name" />
+            <input className='form-field sender-name' type="text" name="sender_name" required/>
           </div>
           <div className='form-item sender-email'>
             <label>Email</label>
-            <input className='form-field' type="email" name="email" />
+            <input className='form-field' type="email" name="email" required/>
           </div>
           <div className='form-item sender-message'>
             <label>Message</label>
-            <textarea className='form-field' name="message" rows='2' onInput={handleTextareaInput}/>
+            <textarea className='form-field' name="message" rows='2' onInput={handleTextareaInput} required/>
           </div>
           <input className='sender-submit button' type="submit" value="Send"/>
         </form>
