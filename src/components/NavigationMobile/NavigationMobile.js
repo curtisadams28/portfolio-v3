@@ -1,4 +1,4 @@
-import './navigationMobile.scss';
+import './NavigationMobile.scss';
 import { useState } from "react";
 
 function NavigationMobile() {

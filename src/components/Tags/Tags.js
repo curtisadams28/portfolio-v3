@@ -1,4 +1,4 @@
-import "./tags.scss";
+import "./Tags.scss";
 function Tag(props) {
   return (
     <div className="tags">

@@ -1,4 +1,4 @@
-import './emailBanner.scss';
+import './EmailBanner.scss';
 import { ReactComponent as CloseButton } from '../../img/x-circle.svg';
 
 function EmailBanner(props) {

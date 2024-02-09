@@ -1,8 +1,8 @@
-import './work-info-page.scss';
-import Tags from '../tag/tags';
-import Work from '../../my-work.json';
+import './WorkDetails.scss';
+import Tags from '../../Tags/Tags';
+import PageContent from '../../../data/page-content.json';
 import React, { useState } from "react";
-import { ReactComponent as LeftArrow } from '../../img/left-arrow.svg';
+import { ReactComponent as LeftArrow } from '../../../img/left-arrow.svg';
 
 
 
@@ -10,7 +10,7 @@ function WorkInfoPage(props) {
 
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  const pageData = Work.myWorkArray[props.index];
+  const pageData = PageContent.myWorkArray[props.index];
   return (
     <div className='work-page section'>
       <div className='section-content'>
@@ -22,7 +22,7 @@ function WorkInfoPage(props) {
         {pageData.imageFile &&
           <img
             className={`img-fade-in ${imageLoaded ? "img-loaded" : ""}`}
-            src={require(`../../img/${pageData.imageFile}`)}
+            src={require(`../../../img/${pageData.imageFile}`)}
             alt=""
             onLoad={() => setImageLoaded(true)}
           />

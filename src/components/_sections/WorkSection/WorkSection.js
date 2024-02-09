@@ -1,10 +1,10 @@
-import './work-card-grid.scss';
-import Card from '../card/card';
-import WorkInfoPage from '../work-info-page/work-info-page';
-import Work from '../../my-work.json';
+import './WorkSection.scss';
+import Card from '../../Card/Card';
+import WorkDetails from '../WorkDetails/WorkDetails';
+import PageContent from '../../../data/page-content.json';
 import { useState, useEffect } from 'react';
 
-function WorkMenu() {
+function WorkSection() {
 
   const [workItem, setWorkItem] = useState(null);
 
@@ -18,7 +18,7 @@ function WorkMenu() {
         <div className='section-content'>
           <h1 className='heading'>My Work</h1>
           <div className='cards'>
-            {Work.myWorkArray.map((item, index) => {
+            {PageContent.myWorkArray.map((item, index) => {
               return(
                 <Card
                   key={item.title}
@@ -35,10 +35,10 @@ function WorkMenu() {
     );
   } else {
     return (
-      <WorkInfoPage index={workItem} handleCardClick={handleCardClick}/>
+      <WorkDetails index={workItem} handleCardClick={handleCardClick}/>
     );
   }
 
 }
 
-export default WorkMenu;
+export default WorkSection;

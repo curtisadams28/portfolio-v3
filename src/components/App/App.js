@@ -1,16 +1,19 @@
-import Navigation from './components/navigation/navigation';
-import NavigationMobile from './components/navigation-mobile/navigationMobile';
-import WorkMenu from './components/work-card-grid/work-card-grid';
-import Contact from './components/contact/contact';
-import './styles/animations.scss';
-import Work from './my-work.json';
-import Tags from './components/tag/tags';
+import Navigation from '../Navigation/Navigation';
+import NavigationMobile from '../NavigationMobile/NavigationMobile';
+
+import Contact from '../_sections/ContactSection/ContactSection';
+import '../../styles/animations.scss';
+import PageContent from '../../data/page-content.json';
+import Tags from '../Tags/Tags';
 
 import { useState, useEffect } from "react";
 
-import { ReactComponent as Mail } from './img/mail.svg';
-import { ReactComponent as Linkedin } from './img/linkedin.svg';
-import { ReactComponent as Github } from './img/github.svg';
+// Page Sections
+import WorkSection from '../_sections/WorkSection/WorkSection';
+
+import { ReactComponent as Mail } from '../../img/mail.svg';
+import { ReactComponent as Linkedin } from '../../img/linkedin.svg';
+import { ReactComponent as Github } from '../../img/github.svg';
 
 function App() {
 
@@ -65,7 +68,7 @@ function App() {
       </section>
 
       <section id='work'>
-        <WorkMenu />
+        <WorkSection />
       </section>
 
       <section id='skills' className='skills section'>
@@ -76,15 +79,15 @@ function App() {
           </div>
           <div className='info-section'>
             <h2 className='heading-sm'>Code</h2>
-            <Tags tagArray={Work.skills.code} />
+            <Tags tagArray={PageContent.skills.code} />
           </div>
           <div className='info-section'>
             <h2 className='heading-sm'>Tools</h2>
-            <Tags tagArray={Work.skills.tools} />
+            <Tags tagArray={PageContent.skills.tools} />
           </div>
           <div className='info-section'>
             <h2 className='heading-sm'>Design</h2>
-            <Tags tagArray={Work.skills.design} />
+            <Tags tagArray={PageContent.skills.design} />
           </div>
         </div>
       </section>

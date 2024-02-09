@@ -1,4 +1,4 @@
-import './navigation.scss';
+import './Navigation.scss';
 import { ReactComponent as Clogo } from '../../img/c-logo.svg';
 
 import { useState, useEffect } from "react";

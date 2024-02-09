@@ -1,6 +1,6 @@
 import { ReactComponent as Arrow } from '../../img/arrow-right.svg';
 
-import './card.scss';
+import './Card.scss';
 
 function Card(props) {
   return(

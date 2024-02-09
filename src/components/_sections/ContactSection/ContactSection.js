@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import './contact.scss';
+import './ContactSection.scss';
 import { useState, useEffect } from "react";
-import EmailBanner from '../email-banner/emailBanner';
+import EmailBanner from '../../EmailBanner/EmailBanner';
 
 export const Contact = () => {
 
