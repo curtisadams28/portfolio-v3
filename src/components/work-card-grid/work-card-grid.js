@@ -18,15 +18,17 @@ function WorkMenu() {
         <div className='section-content'>
           <h1 className='heading'>My Work</h1>
           <div className='cards'>
-            {Work.myWorkArray.map((item, index) => (
-              <Card
-                key={item.title}
-                index={index}
-                title={item.title}
-                info={item.cardInfo}
-                handleCardClick={handleCardClick}
-              />
-            ))}
+            {Work.myWorkArray.map((item, index) => {
+              return(
+                <Card
+                  key={item.title}
+                  index={index}
+                  title={item.title}
+                  info={item.cardInfo}
+                  handleCardClick={handleCardClick}
+                />
+              )
+            })}
           </div>
         </div>
       </div>
