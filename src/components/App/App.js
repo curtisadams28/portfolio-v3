@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 
 // Page Sections
 import Hero from '../_sections/Hero/Hero'
-import WorkSection from '../_sections/Work/WorkSection';
+import MyWork from '../_sections/MyWork/MyWork';
 
 
 
@@ -37,10 +37,8 @@ function App() {
       <Navigation linkPosition={linkPosition} pauseHandleScroll={pauseHandleScroll}/>
       <NavigationMobile />
       <Hero />
-
-      <section id='work'>
-        <WorkSection />
-      </section>
+      <MyWork />
+      
 
       <section id='skills' className='skills section'>
         <div className='section-content'>

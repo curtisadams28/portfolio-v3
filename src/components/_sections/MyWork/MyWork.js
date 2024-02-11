@@ -1,10 +1,10 @@
-import './WorkSection.scss';
+import './MyWork.scss';
 import Card from '../../Card/Card';
 import WorkDetails from '../WorkDetails/WorkDetails';
 import PageContent from '../../../data/page-content.json';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-function WorkSection() {
+function MyWork() {
 
   const [workItem, setWorkItem] = useState(null);
 
@@ -14,7 +14,8 @@ function WorkSection() {
 
   if (workItem === null) {
     return (
-      <div className='work section'>
+      <section id='work'>
+        <div className='work section'>
         <div className='section-content'>
           <h1 className='heading'>My Work</h1>
           <div className='cards'>
@@ -32,6 +33,8 @@ function WorkSection() {
           </div>
         </div>
       </div>
+      </section>
+
     );
   } else {
     return (
@@ -41,4 +44,4 @@ function WorkSection() {
 
 }
 
-export default WorkSection;
+export default MyWork;
