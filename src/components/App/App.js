@@ -1,7 +1,7 @@
 import Navigation from '../Navigation/Navigation';
 import NavigationMobile from '../NavigationMobile/NavigationMobile';
 
-import Contact from '../_sections/ContactSection/ContactSection';
+import Contact from '../_sections/Contact/ContactSection';
 import '../../styles/animations.scss';
 import PageContent from '../../data/page-content.json';
 import Tags from '../Tags/Tags';
@@ -9,7 +9,7 @@ import Tags from '../Tags/Tags';
 import { useState, useEffect } from "react";
 
 // Page Sections
-import WorkSection from '../_sections/WorkSection/WorkSection';
+import WorkSection from '../_sections/Work/WorkSection';
 
 import { ReactComponent as Mail } from '../../img/mail.svg';
 import { ReactComponent as Linkedin } from '../../img/linkedin.svg';
