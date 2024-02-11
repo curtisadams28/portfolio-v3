@@ -9,7 +9,7 @@ import NavigationMobile from '../NavigationMobile/NavigationMobile';
 import Hero from '../_sections/Hero/Hero';
 import MyWork from '../_sections/MyWork/MyWork';
 import Skills from '../_sections/Skills/Skills';
-import Contact from '../_sections/Contact/ContactSection';
+import Contact from '../_sections/Contact/Contact';
 
 function App() {
 
@@ -36,12 +36,7 @@ function App() {
       <Hero />
       <MyWork />
       <Skills />
-
-
-
-      <section id='contact'>
-        <Contact />
-      </section>
+      <Contact />
     </div>
   );
 
