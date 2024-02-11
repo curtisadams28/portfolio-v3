@@ -1,18 +1,15 @@
+import { useState, useEffect } from "react";
+
+import '../../styles/animations.scss';
+
 import Navigation from '../Navigation/Navigation';
 import NavigationMobile from '../NavigationMobile/NavigationMobile';
 
-import Contact from '../_sections/Contact/ContactSection';
-import '../../styles/animations.scss';
-import PageContent from '../../data/page-content.json';
-import Tags from '../Tags/Tags';
-
-import { useState, useEffect } from "react";
-
 // Page Sections
-import Hero from '../_sections/Hero/Hero'
+import Hero from '../_sections/Hero/Hero';
 import MyWork from '../_sections/MyWork/MyWork';
-
-
+import Skills from '../_sections/Skills/Skills';
+import Contact from '../_sections/Contact/ContactSection';
 
 function App() {
 
@@ -38,28 +35,9 @@ function App() {
       <NavigationMobile />
       <Hero />
       <MyWork />
-      
+      <Skills />
 
-      <section id='skills' className='skills section'>
-        <div className='section-content'>
-          <h1 className='heading'>Skills & Experience</h1>
-          <div className='info-section'>
-            <p>As a developer who is proficient with both code and design, my strengths lie in creating applications that look great without sacrificing functionality. After 2 years in the industry as a Front-End Developer, I am beginning to expand into Full-Stack development.</p>
-          </div>
-          <div className='info-section'>
-            <h2 className='heading-sm'>Code</h2>
-            <Tags tagArray={PageContent.skills.code} />
-          </div>
-          <div className='info-section'>
-            <h2 className='heading-sm'>Tools</h2>
-            <Tags tagArray={PageContent.skills.tools} />
-          </div>
-          <div className='info-section'>
-            <h2 className='heading-sm'>Design</h2>
-            <Tags tagArray={PageContent.skills.design} />
-          </div>
-        </div>
-      </section>
+
 
       <section id='contact'>
         <Contact />
