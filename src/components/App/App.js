@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import '../../styles/animations.scss';
+import './App.scss';
 
 import Navigation from '../Navigation/Navigation';
 import NavigationMobile from '../NavigationMobile/NavigationMobile';

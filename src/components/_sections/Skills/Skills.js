@@ -1,6 +1,8 @@
 import React from 'react'
 import PageContent from '../../../data/page-content.json';
 import Tags from '../../Tags/Tags';
+import './Skills.scss';
+
 
 function Skills() {
   return (
