@@ -4,7 +4,7 @@
       "title": "Portfolio Site",
       "type": "Project",
       "date": "2023 - Present",
-      "cardInfo": "Not only developed as a showcase of my work but also a demonstration of development best practices I have learned over the years. Look here for unit tests, DRY code, and seperation of concern.",
+      "cardInfo": "Showcase of my work and best practices in web development.",
       "imageFile": "this-site.jpg",
       "about": "I built this portfolio primarily to showcase my skills with development and design. The site itself incorporates much of the knowledge and experience I learned while working at Shift72. In addition, I used it as an opportunity to learn React Hooks to keep up to date with the current React paradigm.",
       "technologies": [

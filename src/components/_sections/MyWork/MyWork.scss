@@ -19,14 +19,11 @@
   grid-template-columns: auto;
   gap: 30px;
   width: 100%;
+  flex-wrap: wrap;
   @include media-breakpoint-up(md) {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
-  @include media-breakpoint-up(lg) {
-    grid-template-columns: auto auto;
+  @include media-breakpoint-up(xl) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-}
-
-.cards > :first-child {
-  grid-column: 1 / 3;
 }
