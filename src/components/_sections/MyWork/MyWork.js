@@ -25,6 +25,8 @@ function MyWork() {
                   key={item.title}
                   index={index}
                   title={item.title}
+                  type={item.type}
+                  date={item.date}
                   info={item.cardInfo}
                   handleCardClick={handleCardClick}
                 />
