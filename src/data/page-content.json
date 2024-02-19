@@ -23,7 +23,7 @@
       "type": "Work",
       "date": "2020 - 2022",
       "cardInfo": "Video on demand platform for film festivals.",
-      "imageFile": "shift272.jpg",
+      "imageFile": "shift72.jpg",
       "about": "Shift72 is a company that provides online video solutions for content owners and distributors. I was involved in various projects, such as developing an API for uploading translations, building custom sites for clients, creating reusable components for the platform, and upgrading the platform to meet accessibility standards. I gained valuable experience in architecting and implementing web applications, collaborating with different teams and stakeholders, and writing clean and maintainable code.",
       "technologies": [
         "HTML",
@@ -63,10 +63,10 @@
       "CSS",
       "SASS",
       "Javascript",
+      "Typescript",
       "React",
       "Node.js",
-      "SQL",
-      "NPM"
+      "SQL"
     ],
     "tools": [
       "Linux",
