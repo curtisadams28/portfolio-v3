@@ -15,13 +15,13 @@ function Hero() {
       <div className='hero-contact-inner'>
         <div className='social-icons'>
           <div className='vl'></div>
-          <a href="mailto:curtisadams28@gmail.com" target='_blank'>
+          <a href="mailto:curtisadams28@gmail.com" target='_blank' rel='noreferrer'>
             <Mail />
           </a>
-          <a href="https://linkedin.com/in/curtis-dev" target='_blank'>
+          <a href="https://linkedin.com/in/curtis-dev" target='_blank' rel='noreferrer'>
             <Linkedin />
           </a>
-          <a href="https://github.com/curtisadams28" target='_blank'>
+          <a href="https://github.com/curtisadams28" target='_blank' rel='noreferrer'>
             <Github />
           </a>
 

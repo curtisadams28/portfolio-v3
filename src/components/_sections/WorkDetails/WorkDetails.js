@@ -38,13 +38,13 @@ function WorkInfoPage(props) {
           </div>
           <div className='info-section'>
             <h2 className='heading-sm'>Github</h2>
-            <a href={pageData.githubLink} target='_blank'>{pageData.github}</a>
+            <a href={pageData.githubLink} target='_blank' rel='noreferrer'>{pageData.github}</a>
           </div>
           {
             pageData.website &&
             <div className='info-section'>
             <h2 className='heading-sm'>Website</h2>
-            <a href={pageData.websiteLink} target='_blank'>{pageData.website}</a>
+            <a href={pageData.websiteLink} target='_blank' rel='noreferrer'>{pageData.website}</a>
             </div>
           }
         </div>

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import emailjs from '@emailjs/browser';
 import './Contact.scss';
 import EmailBanner from '../../EmailBanner/EmailBanner';

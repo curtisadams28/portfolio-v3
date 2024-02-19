@@ -66,8 +66,7 @@ function App() {
         // Add a class to the corresponding navigation link
         link.classList.add('active');
 
-        if (link.offsetLeft != 0) {
-          //console.log(link.offsetLeft + (link.offsetWidth / 2));
+        if (link.offsetLeft !== 0) {
           setLinkPosition(link.offsetLeft + (link.offsetWidth / 2));
         }
 
