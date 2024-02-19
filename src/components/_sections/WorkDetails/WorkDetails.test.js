@@ -9,6 +9,8 @@ describe('PageContent', () => {
       expect(work).toHaveProperty('imageFile');
       expect(work).toHaveProperty('about');
       expect(work).toHaveProperty('technologies');
+      expect(work).toHaveProperty('type');
+      expect(work).toHaveProperty('date');
     }
   })
   it('myWorkArray values are correct data type', () => {
@@ -17,6 +19,8 @@ describe('PageContent', () => {
       expect(typeof work.cardInfo).toBe('string');
       expect(typeof work.imageFile).toBe('string');
       expect(typeof work.about).toBe('string');
+      expect(typeof work.type).toBe('string');
+      expect(typeof work.date).toBe('string');
       expect(typeof work.technologies).toBe('object');
     }
   })
