@@ -8,6 +8,7 @@ import NavigationMobile from '../NavigationMobile/NavigationMobile';
 
 // Page Sections
 import Hero from '../_sections/Hero/Hero';
+import About from '../_sections/About/About';
 import MyWork from '../_sections/MyWork/MyWork';
 import Skills from '../_sections/Skills/Skills';
 import Contact from '../_sections/Contact/Contact';
@@ -35,6 +36,7 @@ function App() {
       <Navigation linkPosition={linkPosition} pauseHandleScroll={pauseHandleScroll}/>
       <NavigationMobile />
       <Hero />
+      <About />
       <MyWork />
       <Skills />
       <Contact />
