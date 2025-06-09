@@ -36,10 +36,15 @@ function WorkInfoPage(props) {
             <h2 className='heading-sm'>Technologies</h2>
             <Tags tagArray={pageData.technologies} />
           </div>
-          <div className='info-section'>
+
+          {
+            pageData.github &&
+            <div className='info-section'>
             <h2 className='heading-sm'>Github</h2>
             <a href={pageData.githubLink} target='_blank' rel='noreferrer'>{pageData.github}</a>
           </div>
+          }
+
           {
             pageData.website &&
             <div className='info-section'>

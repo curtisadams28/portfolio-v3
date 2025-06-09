@@ -64,8 +64,8 @@
       "type": "Work",
       "date": "2024 - Present",
       "cardInfo": "Training and E-Learning platform.",
-      "imageFile": "reroll.jpg",
-      "about": "Arlo is a training management system that enables clients such as St John to organise training programs with ease. The latest project for my team was rebuilding the checkout system front end. This was a huge opportunity for me as I had not worked on a on a large project from the ground up before. It helped to expand my knowledge of the foundations such as tooling and architecture design",
+      "imageFile": "arlo.png",
+      "about": "My team's latest project at Arlo, a training management system used by clients like St. John, involved a complete rebuild of the front-end checkout system. This was an invaluable experience for me, as it was my first time working on such a large project from its inception. During the project I gained valuable knowledge of tooling, testing and architecture for complex applications.",
       "technologies": [
         "Svelte",
         "Typescript",
