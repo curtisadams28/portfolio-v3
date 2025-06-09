@@ -1,23 +1,25 @@
 {
   "myWorkArray": [
-    {
-      "title": "Portfolio Site",
+            {
+      "title": "Reroll",
       "type": "Project",
-      "date": "2023 - Present",
-      "cardInfo": "Showcase of my work and best practices in web development.",
-      "imageFile": "this-site.jpg",
-      "about": "I built this portfolio primarily to showcase my skills with development and design. The site itself incorporates much of the knowledge and experience I learned while working at Shift72. In addition, I used it as an opportunity to learn React Hooks to keep up to date with the current React paradigm.",
+      "date": "2019 - 2020",
+      "cardInfo": "Recommendations for films and TV.",
+      "imageFile": "reroll.jpg",
+      "about": "A movie recommendations website that uses React and The Movie Database API. The website allows users to discover films based on their tastes and preferences. It was my first complete web app and my introduction to React. I designed and developed it entirely by myself as a personal project.",
       "technologies": [
         "HTML",
-        "SASS",
+        "CSS",
         "React",
-        "Email.js"
+        "TMDB API"
       ],
-      "github": "github.com/curtisadams28/portfolio-v3",
-      "githubLink": "https://github.com/curtisadams28/portfolio-v3",
-      "website": "",
-      "websiteLink": ""
+      "github": "github.com/curtisadams28/Reroll",
+      "githubLink": "https://github.com/curtisadams28/Reroll",
+      "website": "reroll.netlify.app",
+      "websiteLink": "https://reroll.netlify.app/"
     },
+
+
     {
       "title": "Shift72",
       "type": "Work",
@@ -38,23 +40,39 @@
       "website": "tvoddemo.shift72.com",
       "websiteLink": "https://tvoddemo.shift72.com/"
     },
-    {
-      "title": "Reroll",
+        {
+      "title": "Portfolio Site",
       "type": "Project",
-      "date": "2019 - 2020",
-      "cardInfo": "Recommendations for films and TV.",
-      "imageFile": "reroll.jpg",
-      "about": "A movie recommendations website that uses React and The Movie Database API. The website allows users to discover films based on their tastes and preferences. It was my first complete web app and my introduction to React. I designed and developed it entirely by myself as a personal project.",
+      "date": "2023",
+      "cardInfo": "Showcase of my work and best practices in web development.",
+      "imageFile": "this-site.jpg",
+      "about": "I built this portfolio primarily to showcase my skills with development and design. The site itself incorporates much of the knowledge and experience I learned while working at Shift72. In addition, I used it as an opportunity to learn React Hooks to keep up to date with the current React paradigm.",
       "technologies": [
         "HTML",
-        "CSS",
+        "SASS",
         "React",
-        "TMDB API"
+        "Email.js"
       ],
-      "github": "github.com/curtisadams28/Reroll",
-      "githubLink": "https://github.com/curtisadams28/Reroll",
-      "website": "reroll.netlify.app",
-      "websiteLink": "https://reroll.netlify.app/"
+      "github": "github.com/curtisadams28/portfolio-v3",
+      "githubLink": "https://github.com/curtisadams28/portfolio-v3",
+      "website": "",
+      "websiteLink": ""
+    },
+
+    {
+      "title": "Arlo",
+      "type": "Work",
+      "date": "2024 - Present",
+      "cardInfo": "Training and E-Learning platform.",
+      "imageFile": "reroll.jpg",
+      "about": "Arlo is a training management system that enables clients such as St John to organise training programs with ease. The latest project for my team was rebuilding the checkout system front end. This was a huge opportunity for me as I had not worked on a on a large project from the ground up before. It helped to expand my knowledge of the foundations such as tooling and architecture design",
+      "technologies": [
+        "Svelte",
+        "Typescript",
+        "Tailwind",
+        "Vite",
+        "Vue"
+      ]
     }
   ],
   "skills": {
